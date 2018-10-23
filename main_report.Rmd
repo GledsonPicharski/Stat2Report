@@ -1,0 +1,107 @@
+---
+title: "Relatório Estatístico"
+author: "Gledson L. Picharski"
+date: "`r format(Sys.time(), '%d/%m/%Y')`"
+output:
+  word_document:
+    reference_docx: word-styles-reference-01.docx
+    toc: yes
+toc-title: "Sumário"
+knit: 
+  encoding: native.enc
+---
+
+> .
+
+```{r ,warning= FALSE,message=FALSE,echo=FALSE,eval=FALSE}
+##### Objetivos (itens)
+1  
+2 
+3 #
+
+
+
+
+```  
+
+```{r, warning= FALSE,message=FALSE,echo=FALSE}
+suppressPackageStartupMessages(suppressWarnings(library(knitr)))
+suppressPackageStartupMessages(suppressWarnings(library(pander)))
+suppressPackageStartupMessages(suppressWarnings(library(reshape2)))
+
+suppressPackageStartupMessages(suppressWarnings(library(ggplot2)))
+
+
+set.alignment(default = "left", row.names = "left", permanent = TRUE)
+panderOptions("table.emphasize.rownames",FALSE)
+panderOptions("table.split.table",Inf)
+panderOptions("table.style","simple")
+panderOptions('knitr.auto.asis', FALSE)
+.GlobalEnv$tb_i = 0
+.GlobalEnv$fg_i = 0
+
+opts_chunk$set(echo=FALSE,message=FALSE,results = "asis") # important for making sure the output will be well formatted.
+
+
+setwd("C:/Users/Gledson/OneDrive/Documents/00_Estatística/03_pp2/00_andamento/Bianca")
+dados <- read.csv2("dados.csv",stringsAsFactors = FALSE,na.string=c("",NA))
+
+```
+
+```{r, warning= FALSE,message=FALSE,echo=FALSE}
+this.dir <- dirname(rstudioapi::getActiveDocumentContext()$path) ## works on Rstudio
+setwd(this.dir)
+
+dados <- read.csv2("dados.csv", stringsAsFactors = FALSE, na.string=c("",NA))
+```
+
+
+```{r, warning= FALSE,message=FALSE,echo=FALSE}
+## Funções
+
+```
+
+```{r, warning= FALSE,message=FALSE,echo=FALSE}
+## Ajustes nos dados (data wrangling)
+
+```
+
+
+# Métodos
+
+
+##### .
+# Resultados
+
+
+
+```{r, warning= FALSE,message=FALSE,echo=FALSE}
+
+```
+
+
+```{r, warning= FALSE,message=FALSE,echo=FALSE}
+
+```
+
+
+```{r, warning= FALSE,message=FALSE,echo=FALSE}
+
+```
+
+
+```{r, warning= FALSE,message=FALSE,echo=FALSE}
+
+```
+
+
+
+##### .
+#  Referências
+
+**R Core Team (2018).** R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL https://www.R-project.org/.
+
+
+
+
+

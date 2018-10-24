@@ -42,10 +42,6 @@ panderOptions('knitr.auto.asis', FALSE)
 
 opts_chunk$set(echo=FALSE,message=FALSE,results = "asis") # important for making sure the output will be well formatted.
 
-
-setwd("C:/Users/Gledson/OneDrive/Documents/00_Estatística/03_pp2/00_andamento/Bianca")
-dados <- read.csv2("dados.csv",stringsAsFactors = FALSE,na.string=c("",NA))
-
 ```
 
 ```{r, warning= FALSE,message=FALSE,echo=FALSE}
